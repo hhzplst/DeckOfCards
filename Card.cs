@@ -1,5 +1,3 @@
-using System;
-
 namespace Deck {
   public class Card {
     private char Suit {get;}
@@ -14,6 +12,11 @@ namespace Deck {
       if (Rank == 12) return $"Q{Suit}";
       if (Rank == 13) return $"K{Suit}";
       else return $"{Rank}{Suit}";
+    }
+    public bool Equals(Card aCard) {
+      if(!Suit.Equals(aCard.Suit) || !Rank.Equals(aCard.Rank))
+        return false;
+      return true;
     }
   }
 }
