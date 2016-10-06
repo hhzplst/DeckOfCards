@@ -1,7 +1,7 @@
 namespace Deck {
   public class Card {
-    private char Suit {get;}
-    private int Rank {get;}
+    private char Suit {get; set;}
+    private int Rank {get; set;}
     public Card(char c, int i) {
       Suit = c;
       Rank = i;
