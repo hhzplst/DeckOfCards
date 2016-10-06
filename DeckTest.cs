@@ -17,7 +17,7 @@ namespace Deck {
             Console.WriteLine("Showing the second deck after the first shuffle...");
             testDeck.PrintDeck(); 
 
-            while (!myDeck.Equals(testDeck)) {
+            while (!myDeck.Equals(testDeck) || counter < 20) {
                 testDeck.Shuffle();
                 counter++;
                 Console.WriteLine("After the {0} shuffle, the deck becomes:", counter);
